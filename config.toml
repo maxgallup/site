@@ -5,7 +5,7 @@ description = "todo"
 compile_sass = true
 minify_html = true
 generate_feeds = false
-build_search_index = true
+build_search_index = false
 author = "Max Gallup"
 
 default_language = "en"
@@ -67,12 +67,11 @@ show_read_time = true
 show_feed = false
 show_theme_switcher = false
 show_repo = false
+
 # See https://www.getzola.org/documentation/content/linking/#internal-links
 links = [
-	{ url = "@/projects/_index.md", name = "Projects" },
+	{ url = "@/projects/_index.md", name = "Project Showcase" },
 	{ url = "@/cv/index.md", name = "CV" },
-	{ url = "@/now/index.md", name = "Now" },
-	{ url = "https://basingse.org", name = "Blog" },
 ]
 
 [extra.footer]
