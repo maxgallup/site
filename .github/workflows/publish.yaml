@@ -1,0 +1,17 @@
+name: Build and Publish to gh-pages
+
+on: 
+ push:
+  branches:
+   - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+
+    - uses: actions/checkout@v4
+
+    - uses: shalzz/zola-deploy-action@v0.19.2
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

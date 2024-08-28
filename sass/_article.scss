@@ -1,0 +1,35 @@
+#banner-container {
+	$mask: linear-gradient(black, transparent);
+	-webkit-mask-image: $mask;
+	-webkit-user-select: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	mask-image: $mask;
+	width: 100vw;
+	height: 50vw; // hack to keep the aspect ratio 2:1
+	user-select: none;
+
+	#banner {
+		position: fixed;
+		top: 0;
+		left: 0;
+		transition: none;
+		margin: 0;
+	}
+
+	&+h1 {
+		margin-block-start: 35vw;
+	}
+
+	@media only screen and (max-width: 400px) {
+		body:has(&) #site-nav {
+			margin-block-start: 50vw;
+		}
+
+		&+h1 {
+			margin-block-start: 2rem;
+		}
+	}
+}

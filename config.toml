@@ -1,0 +1,81 @@
+title = "Gallup Engineering"
+base_url = "https://gallup.engineering"
+description = "todo"
+
+compile_sass = true
+minify_html = true
+generate_feeds = false
+build_search_index = true
+author = "Max Gallup"
+
+default_language = "en"
+
+taxonomies = [{ name = "tags", feed = true }]
+
+[markdown]
+highlight_code = true
+highlight_theme = "css"
+highlight_themes_css = [
+	{ theme = "solarized-dark", filename = "syntax-theme-dark.css" },
+	{ theme = "solarized-light", filename = "syntax-theme-light.css" },
+]
+smart_punctuation = true
+bottom_footnotes = true
+
+[search]
+include_title = true
+include_description = true
+include_date = true
+include_path = true
+include_content = true
+index_format = "elasticlunr_json"
+
+
+[extra]
+# primary_color = "#3584e4"
+# primary_color_alpha = "rgba(53, 132, 228, 0.2)"
+primary_color = "#3584e4"
+primary_color_alpha = "rgba(53, 132, 228, 0.2)"
+primary_color_dark = "#3584e4"
+primary_color_dark_alpha = "rgba(53, 132, 228, 0.2)"
+default_theme = "light"
+fix_contrast_dark = true
+
+issues_url = "https://github.com/maxgallup/site/issues"
+source_url = "https://github.com/maxgallup/site"
+
+# Additional CSS stylesheets; expects them to be in the "./static/" directory.
+# If you are using Sass it will be generated there automatically.
+stylesheets = [
+  "custom.css",
+]
+# Additional JavaScript scripts; expects them to be in the "./static/" directory.
+# scripts = [
+#   "YOUR_SCRIPT.js",
+#   "ALSO_YOUR_SCRIPT.js"
+# ]
+# Whether to show "copy code" button on all code blocks
+# that have the language set.
+# See https://www.getzola.org/documentation/content/syntax-highlighting/
+show_copy_button = true
+# Whether to show estimated read time in posts.
+# Calculated using the simple math: number of words ÷ words per minute.
+show_read_time = true
+# words_per_minute = "200"
+
+[extra.nav]
+show_feed = false
+show_theme_switcher = false
+show_repo = false
+# See https://www.getzola.org/documentation/content/linking/#internal-links
+links = [
+	{ url = "@/projects/_index.md", name = "Projects" },
+	{ url = "@/cv/index.md", name = "CV" },
+	{ url = "@/now/index.md", name = "Now" },
+	{ url = "https://basingse.org", name = "Blog" },
+]
+
+[extra.footer]
+show_copyright = false
+show_powered_by = false
+show_source = false
