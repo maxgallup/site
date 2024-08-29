@@ -71,7 +71,7 @@ show_repo = false
 # See https://www.getzola.org/documentation/content/linking/#internal-links
 links = [
 	{ url = "@/projects/_index.md", name = "Project Showcase" },
-	{ url = "@/cv/index.md", name = "CV" },
+	{ url = "cv.pdf", name = "CV" },
 ]
 
 [extra.footer]
