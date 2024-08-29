@@ -41,6 +41,8 @@ primary_color_dark_alpha = "rgba(53, 132, 228, 0.2)"
 default_theme = "light"
 fix_contrast_dark = true
 
+date_format = "%d %B %Y"
+
 issues_url = "https://github.com/maxgallup/site/issues"
 source_url = "https://github.com/maxgallup/site"
 
@@ -68,10 +70,11 @@ show_feed = false
 show_theme_switcher = false
 show_repo = false
 
-# See https://www.getzola.org/documentation/content/linking/#internal-links
 links = [
-	{ url = "@/projects/_index.md", name = "Project Showcase" },
-	{ url = "cv.pdf", name = "CV" },
+	{ url = "@/projects/_index.md", name = "Projects" },
+	{ url = "cv.pdf", name = "CV"},
+	{ url = "https://github.com/maxgallup", name = "Github"},
+	{ url = "https://www.linkedin.com/in/maxgallup/", name = "Linkedin"},
 ]
 
 [extra.footer]
