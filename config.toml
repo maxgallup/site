@@ -71,8 +71,8 @@ show_theme_switcher = false
 show_repo = false
 
 links = [
-	{ url = "@/projects/_index.md", name = "Projects" },
 	{ url = "cv.pdf", name = "CV"},
+	{ url = "https://basingse.org", name = "Blog"},
 	{ url = "https://github.com/maxgallup", name = "Github"},
 	{ url = "https://www.linkedin.com/in/maxgallup/", name = "Linkedin"},
 ]
