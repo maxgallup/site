@@ -1,6 +1,10 @@
 #main-container figure {
     float: right;
     padding: 1rem;
-    width: 35%;
+    width: 33%;
+}
+
+#main-container figure figcaption{
+    font-size:x-small;
 }
 

@@ -8,7 +8,7 @@ insert_anchor_links = "right"
         <img src="profile_picture.jpeg" alt="Profile picture" class="no-hover">
         <figcaption>Maximilian Gallup</figcaption>
     </figure>
-    <h1>Gallup Engineering</h1>
+    <h2>Gallup Engineering</h2>
     <p> At Gallup Engineering we value <i>correctness, maintainability and security</i> of technical solutions. Various modern tools enable us to provide consulting as well as production ready services in the following software domains:
     <ul>
         <li>Systems Engineering (Rust, Go, C/C++)</li>
