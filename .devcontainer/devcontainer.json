@@ -1,22 +1,19 @@
 {
-    "name": "site-dev",
-
-    "build": {
-        "dockerfile": "Dockerfile"
-    },
-
-    
-    "customizations": {
-        "vscode": {
-            "extensions": [
-                "streetsidesoftware.code-spell-checker",
-                "tamasfe.even-better-toml",
-            ]
-        }
-    },
-    "capAdd": ["SYS_PTRACE"],
-    "securityOpt": [ "seccomp=unconfined" ],
-    "forwardPorts": [
-        1111
-    ]
+  "name": "Devbox Remote Container",
+  "build": {
+    "dockerfile": "./Dockerfile",
+    "context": ".."
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {},
+      "extensions": [
+        "jetpack-io.devbox",
+        "streetsidesoftware.code-spell-checker",
+        "tamasfe.even-better-toml",
+        "nefrob.vscode-just-syntax",
+      ]
+    }
+  },
+  "remoteUser": "devbox"
 }

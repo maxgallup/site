@@ -1,19 +1,13 @@
-FROM fedora:41
+FROM jetpackio/devbox:latest
 
-RUN dnf update -y && dnf upgrade -y
+# Installing your devbox project
+WORKDIR /code
+USER root:root
+RUN mkdir -p /code && chown ${DEVBOX_USER}:${DEVBOX_USER} /code
+USER ${DEVBOX_USER}:${DEVBOX_USER}
+COPY --chown=${DEVBOX_USER}:${DEVBOX_USER} devbox.json devbox.json
+COPY --chown=${DEVBOX_USER}:${DEVBOX_USER} devbox.lock devbox.lock
 
-RUN dnf install sudo wget vim git just @development-tools -y
+RUN devbox run -- echo "Installed Packages."
 
-RUN dnf copr enable fz0x1/zola -y
-RUN dnf install zola just -y
-
-# Add custom user "dev" with sudo permissions
-RUN useradd dev -u 1000 -m -s /bin/bash && \
-	echo "dev ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
-USER dev
-
-# Terminal prompt customizations
-COPY custom/gu /usr/local/bin/gu
-COPY custom/.bashrc /home/dev/.bashrc
-RUN sudo chown dev:dev /usr/local/bin/gu
-RUN sudo chown dev:dev /home/dev/.bashrc
+RUN devbox shellenv --init-hook >> ~/.profile
