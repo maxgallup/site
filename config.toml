@@ -48,9 +48,7 @@ source_url = "https://github.com/maxgallup/site"
 
 # Additional CSS stylesheets; expects them to be in the "./static/" directory.
 # If you are using Sass it will be generated there automatically.
-stylesheets = [
-  "custom.css",
-]
+stylesheets = ["custom.css"]
 # Additional JavaScript scripts; expects them to be in the "./static/" directory.
 # scripts = [
 #   "YOUR_SCRIPT.js",
@@ -71,9 +69,9 @@ show_theme_switcher = false
 show_repo = false
 
 links = [
-	{ url = "https://basingse.org", name = "Blog"},
-	{ url = "https://github.com/maxgallup", name = "Github"},
-	{ url = "https://www.linkedin.com/in/maxgallup/", name = "Linkedin"},
+	{ url = "https://basingse.org", name = "Blog" },
+	{ url = "https://github.com/maxgallup", name = "Github" },
+	{ url = "https://www.linkedin.com/in/maxgallup/", name = "Linkedin" },
 ]
 
 [extra.footer]
