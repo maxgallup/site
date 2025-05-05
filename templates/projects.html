@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% import "macros.html" as macros %}
+
+{% block content %}
+
+<div class="project-list">
+    {% for page in section.pages %}
+    <div class="project-item">
+        <a href="{{ page.permalink | safe }}" class="project-link">
+            <div class="project-grid">
+                <div class="project-text">
+                    <span class="project-title">{{ page.title }}</span>
+                    <br>
+                    <span class="project-description">{{ page.description }}</span>
+                </div>
+                {%- if page.extra.image -%}
+                    <img src="/{{ page.extra.image }}">
+                {%- endif -%}
+            </div>
+        </a>
+        <br>
+        <hr>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock content %}

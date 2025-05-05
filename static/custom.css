@@ -8,3 +8,174 @@
     font-size:x-small;
 }
 
+
+
+
+
+
+/* Projects */
+
+/* Main Project Section Styling */
+.project-list {
+    max-width: 1200px;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+/* h2 {
+font-size: 2.5rem;
+font-weight: 600;
+margin-bottom: 2rem;
+color: #333;
+font-family: 'Poppins', sans-serif;
+} */
+
+/* Project Item Styling */
+ /* .project-item {
+background-color: #fff;
+border-radius: 12px;
+overflow: hidden;
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+} */
+
+/* .project-item:hover {
+transform: translateY(-5px);
+box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+} */
+
+.project-title {
+    font-size: 1.6rem;
+    font-family: var(--font-antique);
+}
+.project-description {
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.project-link {
+text-decoration: none;
+color: inherit;
+display: block;
+} 
+
+/* Grid Layout for Project Content */
+/* .project-grid {
+display: grid;
+grid-template-columns: 1fr 2fr 2fr;
+grid-template-areas: "date text image";
+min-height: 200px;
+} */
+
+/* Date Styling */
+/* .project-date {
+grid-area: date;
+background-color: #f5f9ff;
+padding: 2rem;
+display: flex;
+align-items: center;
+justify-content: center;
+font-weight: 500;
+color: #0077cc;
+font-size: 1rem;
+border-right: 1px solid #eaeaea;
+} */
+
+/* Text Content Styling */
+/* .project-text {
+grid-area: text;
+padding: 2rem;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+.project-title {
+font-size: 1.5rem;
+font-weight: 600;
+margin-bottom: 0.75rem;
+color: #222;
+display: block;
+} */
+
+/* .project-description {
+font-size: 1rem;
+color: #666;
+line-height: 1.6;
+} */
+
+/* Image Styling */
+/* .project-grid img {
+grid-area: image;
+width: 100%;
+height: 100%;
+object-fit: cover;
+} */
+
+/* For projects without images */
+/* .project-grid:not(:has(img)) {
+grid-template-columns: 1fr 5fr;
+grid-template-areas: "date text";
+} */
+
+/* VUASE Specific Styling - Based on the logo colors */
+/* .project-item:nth-child(odd) .project-date {
+background-color: #e6f2ff;
+}
+
+.project-item:nth-child(even) .project-date {
+background-color: #f0f8ff;
+} */
+
+/* Responsive Adjustments */
+/* @media (max-width: 900px) {
+.project-grid {
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "date text"
+    "image image";
+}
+
+.project-grid img {
+    height: 300px;
+}
+}
+
+@media (max-width: 600px) {
+.project-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "date"
+    "text"
+    "image";
+}
+
+.project-date {
+    text-align: center;
+    padding: 1rem;
+    border-right: none;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.project-text {
+    padding: 1.5rem;
+}
+} */
+
+/* Optional: Add this to your base stylesheet for the page background shown in the screenshot */
+/* body {
+background-color: #f5f9ff;
+font-family: 'Inter', 'Segoe UI', sans-serif;
+padding: 0 1rem;
+}
+
+/* Container for overall page width */
+/* .content {
+max-width: 1200px;
+margin: 0 auto;
+padding: 2rem 0;
+} */

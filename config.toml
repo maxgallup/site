@@ -16,7 +16,7 @@ highlight_code = true
 highlight_theme = "css"
 highlight_themes_css = [
 	{ theme = "solarized-dark", filename = "syntax-theme-dark.css" },
-	{ theme = "solarized-light", filename = "syntax-theme-light.css" }
+	{ theme = "solarized-light", filename = "syntax-theme-light.css" },
 ]
 smart_punctuation = true
 bottom_footnotes = true
@@ -68,21 +68,45 @@ show_backlinks = true
 # Keep in mind that although this can potentially increase security,
 # it can break some stuff, in which case you will need to set custom policy.
 csp = [
-	{ directive = "font-src", domains = ["'self'"] },
-	{ directive = "img-src", domains = ["'self'", "https:", "data:"] },
-	{ directive = "media-src", domains = ["'self'", "https:"] },
-	{ directive = "script-src", domains = ["'self'"] },
-	{ directive = "style-src", domains = ["'self'", "'unsafe-inline'"] },
-	{ directive = "frame-src", domains = ["https://player.vimeo.com", "https://www.youtube-nocookie.com", "https://toot.community"] },
-	{ directive = "connect-src", domains = ["https://toot.community"] },
-	{ directive = "base-uri", domains = ["'none'"] },
-	{ directive = "form-action", domains = ["'none'"] }
+	{ directive = "font-src", domains = [
+		"'self'",
+	] },
+	{ directive = "img-src", domains = [
+		"'self'",
+		"https:",
+		"data:",
+	] },
+	{ directive = "media-src", domains = [
+		"'self'",
+		"https:",
+	] },
+	{ directive = "script-src", domains = [
+		"'self'",
+	] },
+	{ directive = "style-src", domains = [
+		"'self'",
+		"'unsafe-inline'",
+	] },
+	{ directive = "frame-src", domains = [
+		"https://player.vimeo.com",
+		"https://www.youtube-nocookie.com",
+		"https://toot.community",
+	] },
+	{ directive = "connect-src", domains = [
+		"https://toot.community",
+	] },
+	{ directive = "base-uri", domains = [
+		"'none'",
+	] },
+	{ directive = "form-action", domains = [
+		"'none'",
+	] },
 ]
 # Uncomment this to disable the card displayed in share previews
 # card = false
 
 [extra.nav]
-show_feed = false 
+show_feed = false
 show_theme_switcher = true
 show_repo = false
 # Links used in the nav.
@@ -90,11 +114,9 @@ show_repo = false
 # i.e. "@/blog/_index.md".
 # See https://www.getzola.org/documentation/content/linking/#internal-links
 links = [
-    { url = "@/projects/_index.md", name = "Projects" },
-    { url = "https://basingse.org", name = "Blog" },
-    { url = "https://www.linkedin.com/in/maxgallup", name = "Linkedin" },
-    { url = "https://github.com/maxgallup", name = "Github" },
-	
+	{ url = "@/projects/_index.md", name = "Projects" },
+	{ url = "https://basingse.org", name = "Blog" },
+	{ url = "@/contact/_index.md", name = "Contact" },
 ]
 
 [extra.footer]
