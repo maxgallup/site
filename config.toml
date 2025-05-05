@@ -1,80 +1,110 @@
-title = "Gallup Engineering"
 base_url = "https://gallup.engineering"
-description = "todo"
+title = "Gallup Engineering"
+
+theme = "duckquill"
 
 compile_sass = true
 minify_html = true
 generate_feeds = false
-build_search_index = false
+build_search_index = true
 author = "Max Gallup"
 
 default_language = "en"
-
-taxonomies = [{ name = "tags", feed = true }]
 
 [markdown]
 highlight_code = true
 highlight_theme = "css"
 highlight_themes_css = [
 	{ theme = "solarized-dark", filename = "syntax-theme-dark.css" },
-	{ theme = "solarized-light", filename = "syntax-theme-light.css" },
+	{ theme = "solarized-light", filename = "syntax-theme-light.css" }
 ]
 smart_punctuation = true
 bottom_footnotes = true
 
 [search]
-include_title = true
-include_description = true
-include_date = true
-include_path = true
-include_content = true
-index_format = "elasticlunr_json"
+# index_format = "elasticlunr_json"
+index_format = "fuse_json"
 
 
 [extra]
-# primary_color = "#3584e4"
-# primary_color_alpha = "rgba(53, 132, 228, 0.2)"
-primary_color = "#3584e4"
-primary_color_alpha = "rgba(53, 132, 228, 0.2)"
-primary_color_dark = "#3584e4"
-primary_color_dark_alpha = "rgba(53, 132, 228, 0.2)"
 default_theme = "light"
-fix_contrast_dark = true
+accent_color = "#3584e4"
+accent_color_dark = "#3584e4"
 
-date_format = "%d %B %Y"
-
-issues_url = "https://github.com/maxgallup/site/issues"
-source_url = "https://github.com/maxgallup/site"
-
-# Additional CSS stylesheets; expects them to be in the "./static/" directory.
-# If you are using Sass it will be generated there automatically.
-stylesheets = ["custom.css"]
-# Additional JavaScript scripts; expects them to be in the "./static/" directory.
-# scripts = [
-#   "YOUR_SCRIPT.js",
-#   "ALSO_YOUR_SCRIPT.js"
-# ]
-# Whether to show "copy code" button on all code blocks
-# that have the language set.
-# See https://www.getzola.org/documentation/content/syntax-highlighting/
+styles = ["custom.css"]
 show_copy_button = true
-# Whether to show estimated read time in posts.
-# Calculated using the simple math: number of words ÷ words per minute.
-show_read_time = true
-# words_per_minute = "200"
+show_reading_time = true
+# emoji_favicon = "🔧"
+
+
+show_share_button = false
+# Whether to show the backlinks button for linked articles in the article's quick actions
+show_backlinks = true
+# Whether to enable the KaTeX library for rendering LaTeX.
+# Note: This will make your page significantly heavier.
+# Instead, consider enabling it per page/section.
+# katex = true
+
+# Whether to render table of contents on all pages.
+# Will not be rendered if page doesn't have any headings.
+# Can be set per page/section.
+# toc = true
+
+# Whether to render inline table of contents at the top of all pages,
+# in addition to floating quick navigation buttons.
+# Can be set per page/section.
+# toc_inline = true
+
+# Whether to use numbered (ordered) list for table of contents.
+# Can be set per page/section.
+# toc_ordered = true
+
+# Custom separator used across the theme.
+# separator = "•"
+# Custom separator used in title tag and posts metadata.
+# title_separator = "-"
+
+# Whether to use Content Security Policy.
+# Keep in mind that although this can potentially increase security,
+# it can break some stuff, in which case you will need to set custom policy.
+csp = [
+	{ directive = "font-src", domains = ["'self'"] },
+	{ directive = "img-src", domains = ["'self'", "https:", "data:"] },
+	{ directive = "media-src", domains = ["'self'", "https:"] },
+	{ directive = "script-src", domains = ["'self'"] },
+	{ directive = "style-src", domains = ["'self'", "'unsafe-inline'"] },
+	{ directive = "frame-src", domains = ["https://player.vimeo.com", "https://www.youtube-nocookie.com", "https://toot.community"] },
+	{ directive = "connect-src", domains = ["https://toot.community"] },
+	{ directive = "base-uri", domains = ["'none'"] },
+	{ directive = "form-action", domains = ["'none'"] }
+]
+# Uncomment this to disable the card displayed in share previews
+# card = false
 
 [extra.nav]
-show_feed = false
-show_theme_switcher = false
+show_feed = false 
+show_theme_switcher = true
 show_repo = false
-
+# Links used in the nav.
+# For local files use same link format as in Markdown,
+# i.e. "@/blog/_index.md".
+# See https://www.getzola.org/documentation/content/linking/#internal-links
 links = [
-	{ url = "https://basingse.org", name = "Blog" },
-	{ url = "https://github.com/maxgallup", name = "Github" },
-	{ url = "https://www.linkedin.com/in/maxgallup/", name = "Linkedin" },
+    { url = "@/projects/_index.md", name = "Projects" },
+    { url = "https://basingse.org", name = "Blog" },
+    { url = "https://www.linkedin.com/in/maxgallup", name = "Linkedin" },
+    { url = "https://github.com/maxgallup", name = "Github" },
+	
 ]
 
 [extra.footer]
 show_copyright = false
 show_powered_by = false
 show_source = false
+
+
+[extra.debug]
+# Display outlines around all elements for debugging purposes
+layout = false
+# Don't load any styles for debugging purposes
+no_styles = false
