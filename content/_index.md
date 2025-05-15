@@ -20,12 +20,9 @@
         <li>SMD Soldering</li>
         <li>Embedded Security Analysis</li>
     </ul>
-    <h2>Motivation</h2>
+    <!-- <h2>Motivation</h2>
     <p><i>Why bother with all of this? Why security?</i></p>
-    <p>A more detailed answer to this question can be found in a <a href="https://basingse.org/future-of-computer-security">blog post</a> of mine. However, the short version is as follows: I believe that systems need to be built with security as a top priority from the <strong>ground up</strong> and intentionally setting the requirements to allow security to be prioritized in this way. It's important to align the business context with the expectations of delivering safe and secure systems to begin with. For this reason, I offer services exclusively in a setting where high expectations towards security and quality are the norm.</p>
+    <p>A more detailed answer to this question can be found in a <a href="https://basingse.org/future-of-computer-security">blog post</a> of mine. However, the short version is as follows: I believe that systems need to be built with security as a top priority from the <strong>ground up</strong> and by prioritizing requirements accordingly. It's important to align the business context with the expectations of delivering safe and secure systems to begin with, not after the fact. For this reason, I offer services exclusively in the context where high expectations towards security and quality are the norm.</p> -->
 </div>
 
 
-<!-- I'm <i>correctness, maintainability and security</i> of technical solutions. Various modern tools enable us to provide consulting as well as production ready services in the following software domains:
-
-We also offer early-stage prototyping and consulting services in the following hardware domains: -->
