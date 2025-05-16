@@ -6,7 +6,7 @@
         <img src="profile_picture.jpeg" alt="Profile picture" class="no-hover">
     </figure>
     <h2>Gallup Engineering</h2>
-    <p> Hey! I'm Max Gallup, currently pursuing a Master in Computer Security at VU Amsterdam. I'm also co-running a platform that offers bachelor students a final year project in the field of autonomous driving (<a href="https://basingse.org/ase">read more</a>). On top of that, I also offer freelance software development, specializing in the fields of: </p>
+    <p> Hey! I'm Max Gallup, currently pursuing a Master in Computer Security at VU Amsterdam. I'm also co-running a platform that offers bachelor students a final year project in the field of autonomous driving (<a href="/projects/ase">read more</a>). On top of that, I also offer freelance software development, specializing in the fields of: </p>
     <ul>
         <li>Systems Programming</li>
         <li>Integrations & Automation</li>
