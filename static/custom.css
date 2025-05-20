@@ -90,6 +90,14 @@ display: block;
     flex-shrink: 0;
 }
 
+.lang-icon {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    top: 2px; 
+  }
+
+
 /* Grid Layout for Project Content */
 /* .project-grid {
 display: grid;

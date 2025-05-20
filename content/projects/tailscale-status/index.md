@@ -8,3 +8,4 @@ image = "tailscale-logo.png"
 repo = "https://github.com/maxgallup/tailscale-status"
 +++
 
+An extension
